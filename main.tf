@@ -3,7 +3,3 @@ resource "null_resource" "print_repo_id" {
     command = "echo Repository ID: $TFC_CONFIGURATION_VERSION_REPO_ID"
   }
 }
-
-output "repo_id" {
-  value = terraform.workspace
-}
